@@ -12,4 +12,5 @@
 - Shidlovskaya Katerina
 - Sokolova Polina
 - Melnichenko Leonid
-- всем привет
+
+МИР ТРУД МАЙ
