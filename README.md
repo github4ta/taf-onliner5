@@ -1,7 +1,11 @@
+<<<<<<< HEAD
+taf-onliner5
+=======
 # taf-onliner5
 
+
 - Tsarik Sergei
-- Avchinnikova Alina
+- Avchinnikova Alina ++++++++++++++++++++++++++++++++++++++
 - Aliasiuk Andrei
 - Shikin Nikita
 - Gasich Olga
@@ -12,4 +16,6 @@
 - Shidlovskaya Katerina
 - Sokolova Polina
 - Melnichenko Leonid
-- bla-bla
+
+МИР ТРУД МАЙ
+всем привет
