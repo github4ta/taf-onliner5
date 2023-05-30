@@ -5,7 +5,7 @@ taf-onliner5
 
 
 - Tsarik Sergei
-- Avchinnikova Alina ++++++++++++++++++++++++++++++++++++++
+- Avchinnikova Alina 
 - Aliasiuk Andrei
 - Shikin Nikita
 - Gasich Olga
