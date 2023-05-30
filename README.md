@@ -5,12 +5,12 @@ taf-onliner5
 
 
 - Tsarik Sergei
-- Avchinnikova Alina ++++++++++++++++++++++++++++++++++++++
+- Avchinnikova Alina 
 - Aliasiuk Andrei
 - Shikin Nikita
 - Gasich Olga
 - Tatjana Balashevich
-- Lenkevich Alexey
+- Lenkevich Alexey!!!
 - Shirochina Anastasiya
 - Filenkov Vladislav
 - Shidlovskaya Katerina
@@ -18,4 +18,4 @@ taf-onliner5
 - Melnichenko Leonid
 
 МИР ТРУД МАЙ
-всем привет
+Ура, лето
