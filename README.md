@@ -1,4 +1,8 @@
-0# taf-onliner5...0
+<<<<<<< HEAD
+taf-onliner5
+=======
+# taf-onliner5
+
 
 - Tsarik Sergei
 - Avchinnikova Alina ++++++++++++++++++++++++++++++++++++++
@@ -11,3 +15,6 @@
 - Filenkov Vladislav
 - Shidlovskaya Katerina
 - Sokolova Polina
+- Melnichenko Leonid
+
+МИР ТРУД МАЙ
