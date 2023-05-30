@@ -7,3 +7,4 @@
 - Gasich Olga
 - Tatjana Balashevich
 - Lenkevich Alexey
+- Shirochina Anastasiya
