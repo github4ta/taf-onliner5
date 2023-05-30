@@ -10,3 +10,4 @@
 - Shirochina Anastasiya
 - Filenkov Vladislav
 - Shidlovskaya Katerina
+- Sokolova Polina
