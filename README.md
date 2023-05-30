@@ -2,3 +2,4 @@
 
 - Tsarik Sergei
 - Avchinnikova Alina
+- Aliasiuk Andrei
