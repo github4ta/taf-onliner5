@@ -4,3 +4,4 @@
 - Avchinnikova Alina
 - Aliasiuk Andrei
 - Shikin Nikita
+- Gasich Olga
