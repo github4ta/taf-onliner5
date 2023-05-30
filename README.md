@@ -5,4 +5,5 @@
 - Aliasiuk Andrei
 - Shikin Nikita
 - Gasich Olga
--Tatjana Balashevich
+- Tatjana Balashevich
+- Lenkevich Alexey
