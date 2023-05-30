@@ -9,3 +9,4 @@
 - Lenkevich Alexey
 - Shirochina Anastasiya
 - Filenkov Vladislav
+- Shidlovskaya Katerina
