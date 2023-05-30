@@ -18,4 +18,4 @@ taf-onliner5
 - Melnichenko Leonid
 
 МИР ТРУД МАЙ
-всем привет
+Ура, лето
