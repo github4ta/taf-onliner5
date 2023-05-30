@@ -16,3 +16,5 @@ taf-onliner5
 - Shidlovskaya Katerina
 - Sokolova Polina
 - Melnichenko Leonid
+
+МИР ТРУД МАЙ
