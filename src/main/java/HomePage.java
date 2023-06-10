@@ -7,7 +7,7 @@ public class HomePage {
     String buttonEnterByClassName = "auth-bar__item auth-bar__item--text";
     String buttonNewsByXpath = "//span[@class='b-main-navigation__text' and text()='Новости']";
     String servicesItemByXpath = "//span[@class='b-main-navigation__text' and text() = 'Услуги']";
-    String mainNavAvtobaraholkaItemXpath = "//span[@class='b-main-navigation__text'and text()='Автобарахолка']";
+    String mainNavAvtobaraholkaItemXpath = "//span[@class='b-main-navigation__text' and text()='Автобарахолка']";
 
     WebDriver driver;
 
@@ -16,7 +16,7 @@ public class HomePage {
     }
 
     public HomePage clickNewsButton() {
-        WebElement buttonNews = driver.findElement(By.className(buttonNewsByClassName));
+        WebElement buttonNews = driver.findElement(By.className(buttonNewsByXpath));
         buttonNews.click();
         return this;
     }
