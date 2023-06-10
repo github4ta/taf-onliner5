@@ -1,4 +1,6 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class HomePage {
     String footerClassName = "footer-style__copy";
@@ -12,5 +14,11 @@ public class HomePage {
 
     public HomePage(WebDriver driver){
         this.driver = driver;
+    }
+
+    public void clickButtonEnter(){
+
+        WebElement buttonEnter = driver.findElement(By.className(buttonEnterByClassName));
+        buttonEnter.click();
     }
 }
