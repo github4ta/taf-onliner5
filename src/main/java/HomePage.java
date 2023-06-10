@@ -15,8 +15,9 @@ public class HomePage {
         this.driver = driver;
     }
 
-    public void clickNewsButton() {
+    public HomePage clickNewsButton() {
         WebElement buttonNews = driver.findElement(By.className(buttonNewsByClassName));
         buttonNews.click();
+        return this;
     }
 }
