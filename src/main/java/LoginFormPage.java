@@ -10,7 +10,6 @@ public class LoginFormPage {
     String inputNickNameByXPath ="//input[@placeholder='Ник или e-mail']";
     String errorMessageEmailXpath = "//*[@id='auth-container']/div/div[2]/div/form/div[1]/div/div[2]/div/div/div[2]/div";
 
-
     public LoginFormPage(WebDriver driver){
         this.driver = driver;
     }
