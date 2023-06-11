@@ -31,4 +31,10 @@ public class HomePage{
         Webelement mainNavAvtobaraholkaItem = driver.findElement(By.Xpath(mainNavAvtobaraholkaItemXpath));
         mainNavAvtobaraholkaItem.click();
     }
+      
+    public void clickServicesItem() {
+            WebElement servicesItem = driver.findElement(By.xpath(servicesItemByXpath));
+            servicesItem.click();
+        }
+    }
 }
