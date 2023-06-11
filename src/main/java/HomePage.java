@@ -8,8 +8,8 @@ public class HomePage{
     String buttonNewsByXpath = "//span[@class='b-main-navigation__text' and text() = 'Новости']";
     String servicesItemByXpath = "//span[@class='b-main-navigation__text' and text() = 'Услуги']";
     String mainNavAvtobaraholkaItemXpath ="//span[@class='b-main-navigation__text'and text()='Автобарахолка']";
-
-
+    String mainNavForumItemXpath ="//span[@class='b-main-navigation__text'and text()='Форум']";
+  
     WebDriver driver;
 
     public HomePage(WebDriver driver) {
@@ -20,5 +20,9 @@ public class HomePage{
         WebElement buttonNews = driver.findElement(By.className(buttonNewsByXpath));
         buttonNews.click();
         return this;
+
+    public void clickButtonEnter(){
+        WebElement buttonEnter = driver.findElement(By.className(buttonEnterByClassName));
+        buttonEnter.click();
     }
 }
