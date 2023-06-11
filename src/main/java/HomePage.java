@@ -27,4 +27,8 @@ public class HomePage{
         WebElement buttonEnter = driver.findElement(By.className(buttonEnterByClassName));
         buttonEnter.click();
     }
+    public void clickmainNavAvtobaraholkaItem(){
+        Webelement mainNavAvtobaraholkaItem = driver.findElement(By.Xpath(mainNavAvtobaraholkaItemXpath));
+        mainNavAvtobaraholkaItem.click();
+    }
 }
