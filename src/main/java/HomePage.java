@@ -51,10 +51,10 @@ public class HomePage {
         buttonCatalogItem.click();
     }
 
-    public HomePage getFooterText(){
+    public String getFooterText(){
 
-        WebElement actualFooterText = driver.findElement(By.className(footerClassName));
-        actualFooterText.getText();
-        return this;
+        WebElement footerText = driver.findElement(By.className(footerClassName));
+        String actualFooterText = footerText.getText();
+        return actualFooterText;
     }
 }
