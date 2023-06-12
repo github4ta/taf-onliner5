@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class LoginFormPage {
@@ -14,5 +15,8 @@ public class LoginFormPage {
 
     public LoginFormPage(WebDriver driver){
         this.driver = driver;
+    }
+    public void clickButtonLogin(){
+        driver.findElement(By.className(buttonLoginByClassName)).click();
     }
 }
