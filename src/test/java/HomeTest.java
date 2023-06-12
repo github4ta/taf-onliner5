@@ -1,4 +1,2 @@
-package java;
-
-public class HomeTest {
+class HomeTest extends Test {
 }
