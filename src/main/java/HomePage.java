@@ -11,6 +11,7 @@ public class HomePage{
     String mainNavForumItemXpath ="//span[@class='b-main-navigation__text'and text()='Форум']";
     String mainNavFleaItemByXpath = "//span[@class='b-main-navigation__text'][text()='Барахолка']";
     String buttonCatalogItemXpath = "//span[@class='b-main-navigation__text' and text() = 'Каталог']";
+    String buttonHousesAndApartmentsXPath= "//*[@id='container']/div/div[2]/header/div[1]/div/nav/ul[1]/li[4]/a/span";
 
     WebDriver driver;
 
@@ -23,20 +24,26 @@ public class HomePage{
         buttonNews.click();
         return this;
 
-    public void clickButtonEnter(){
-        WebElement buttonEnter = driver.findElement(By.className(buttonEnterByClassName));
-        buttonEnter.click();
-    }
-    public void clickmainNavAvtobaraholkaItem(){
-        Webelement mainNavAvtobaraholkaItem = driver.findElement(By.Xpath(mainNavAvtobaraholkaItemXpath));
-        mainNavAvtobaraholkaItem.click();
-    }
-      
-    public void clickServicesItem() {
+        public void clickButtonEnter(){
+            WebElement buttonEnter = driver.findElement(By.className(buttonEnterByClassName));
+            buttonEnter.click();
+        }
+        public void clickmainNavAvtobaraholkaItem(){
+            Webelement mainNavAvtobaraholkaItem = driver.findElement(By.Xpath(mainNavAvtobaraholkaItemXpath));
+            mainNavAvtobaraholkaItem.click();
+        }
+
+        public void clickServicesItem() {
             WebElement servicesItem = driver.findElement(By.xpath(servicesItemByXpath));
             servicesItem.click();
         }
     }
+
+      public HomePage clickMenuItemFlea(){
+        WebElement menuItemFlea = driver.findElement(By.xpath(mainNavFleaItemByXpath));
+        menuItemFlea.click();
+        return this;
+
     public void clickbuttonCatalogItem(){
         WebElement buttonCatalogItem = driver.findElement(By.xpath(buttonCatalogItemXpath));
         buttonCatalogItem.click();
