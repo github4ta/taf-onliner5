@@ -38,9 +38,14 @@ public class HomePage{
             servicesItem.click();
         }
     }
-    public HomePage clickMenuItemFlea(){
+
+      public HomePage clickMenuItemFlea(){
         WebElement menuItemFlea = driver.findElement(By.xpath(mainNavFleaItemByXpath));
         menuItemFlea.click();
         return this;
+
+    public void clickbuttonCatalogItem(){
+        WebElement buttonCatalogItem = driver.findElement(By.xpath(buttonCatalogItemXpath));
+        buttonCatalogItem.click();
     }
 }
