@@ -38,4 +38,8 @@ public class HomePage{
             servicesItem.click();
         }
     }
+    public void clickbuttonCatalogItem(){
+        WebElement buttonCatalogItem = driver.findElement(By.xpath(buttonCatalogItemXpath));
+        buttonCatalogItem.click();
+    }
 }
