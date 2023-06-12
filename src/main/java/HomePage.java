@@ -13,9 +13,10 @@ public class HomePage {
     String mainNavForumItemXpath = "//span[@class='b-main-navigation__text'and text()='Форум']";
     String mainNavFleaItemByXpath = "//span[@class='b-main-navigation__text'][text()='Барахолка']";
     String buttonCatalogItemXpath = "//span[@class='b-main-navigation__text' and text() = 'Каталог']";
-    String buttonHousesAndApartmentsXPath = "//*[@id='container']/div/div[2]/header/div[1]/div/nav/ul[1]/li[4]/a/span";
     String buttonLoginByXpath = "//div[contains(text(),'Вход')]";
+    String buttonHousesAndApartmentsItemXpath = "//span[@class='b-main-navigation__text' and text() = 'Дома и квартиры']"
     String url = "https://www.onliner.by/";
+
     WebDriver driver;
 
     public HomePage(WebDriver driver) {
@@ -31,6 +32,12 @@ public class HomePage {
     public void clickButtonEnter() {
         WebElement buttonEnter = driver.findElement(By.xpath(buttonEnterByXPath));
         buttonEnter.click();
+    }
+
+    public HomePage clickMenuItemHouses(){
+        WebElement buttonHouses = driver.findElement(By.xpath(buttonHousesAndApartmentsItemXpath));
+        buttonHouses.click();
+        return this;
     }
 
     public void clickButtonLogin() {
