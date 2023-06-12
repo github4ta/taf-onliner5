@@ -13,13 +13,14 @@ public class HomePage {
     String mainNavForumItemXpath = "//span[@class='b-main-navigation__text'and text()='Форум']";
     String mainNavFleaItemByXpath = "//span[@class='b-main-navigation__text'][text()='Барахолка']";
     String buttonCatalogItemXpath = "//span[@class='b-main-navigation__text' and text() = 'Каталог']";
+    String buttonHousesAndApartmentsItemXpath = "//span[@class='b-main-navigation__text' and text() = 'Дома и квартиры']";
+
     String buttonLoginByXpath = "//div[contains(text(),'Вход')]";
-    String buttonHousesAndApartmentsItemXpath = "//span[@class='b-main-navigation__text' and text() = 'Дома и квартиры']"
     String url = "https://www.onliner.by/";
 
     WebDriver driver;
 
-    public HomePage(WebDriver driver) {
+    public HomePage(WebDriver driver){
         this.driver = driver;
     }
 
