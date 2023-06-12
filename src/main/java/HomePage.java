@@ -10,6 +10,7 @@ public class HomePage {
     String mainNavAvtobaraholkaItemXpath ="//span[@class='b-main-navigation__text'and text()='Автобарахолка']";
     String mainNavForumItemXpath ="//span[@class='b-main-navigation__text'and text()='Форум']";
     String buttonCatalogItemXpath = "//span[@class='b-main-navigation__text' and text() = 'Каталог']";
+    String buttonHousesAndApartmentsItemXpath = "//span[@class='b-main-navigation__text' and text() = 'Дома и квартиры']";
   
     WebDriver driver;
 
