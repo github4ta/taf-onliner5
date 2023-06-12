@@ -1,5 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class LoginFormPage {
 
@@ -18,5 +19,10 @@ public class LoginFormPage {
     }
     public void clickButtonLogin(){
         driver.findElement(By.className(buttonLoginByClassName)).click();
+    }
+
+    public String getLabelTitleEnter(){
+        WebElement labelTitleEnter = driver.findElement(By.className(labelTitleEnterByClassName));
+        return labelTitleEnter.getText();
     }
 }
