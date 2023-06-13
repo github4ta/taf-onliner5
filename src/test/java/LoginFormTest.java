@@ -1,11 +1,16 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 class LoginFormTest extends BaseTest {
+
+    LoginFormPage loginFormPage;
+    WebDriver driver;
 
     @Test
     public void testLoginFormOpened() {
@@ -42,4 +47,13 @@ class LoginFormTest extends BaseTest {
         String actualResult = loginFormPage.getPasswordText();
         Assertions.assertEquals("Пароль", actualResult);
     }
+
+    @Test
+    public void compareEmailPlaceholder(){
+
+        loginFormPage = new LoginFormPage(driver);
+        String actualEmailPlaceholder = loginFormPage.getEmailPlaceholder();
+        Assertions.assertEquals("Ник или e-mail", actualEmailPlaceholder);
+    }
 }
+
