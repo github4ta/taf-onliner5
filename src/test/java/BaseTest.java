@@ -3,12 +3,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Test {
+public class BaseTest {
     WebDriver driver;
     @BeforeEach
     public void beforeTest(){
         driver = new ChromeDriver();
     }
+
     @AfterEach
     public void afterTest(){
         driver.quit();

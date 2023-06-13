@@ -1,10 +1,12 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-class HomeTest extends Test {
+class HomeTest extends BaseTest {
 
     HomePage homePage;
-    @org.junit.jupiter.api.Test
-    public void openSiteAndCheckFooterText(){
+
+    @Test
+    public void openSiteAndCheckFooterText() {
         homePage = new HomePage(driver);
         homePage.goTo();
         String actualResult = homePage.getFooterText();
