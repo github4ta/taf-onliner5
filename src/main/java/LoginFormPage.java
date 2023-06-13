@@ -38,4 +38,9 @@ public class LoginFormPage {
         inputPassword.click();
         return this;
     }
+
+    public String getTextOfBtnLogin() {
+        WebElement getText = driver.findElement(By.className(buttonLoginByClassName));
+        return getText.getText();
+    }
 }
