@@ -57,7 +57,4 @@ public class HomePage {
         String actualFooterText = footerText.getText();
         return actualFooterText;
     }
-    public void goTo(){
-        driver.get(url);
-    }
 }
