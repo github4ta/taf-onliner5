@@ -50,4 +50,11 @@ public class HomePage {
         WebElement buttonCatalogItem = driver.findElement(By.xpath(buttonCatalogItemXpath));
         buttonCatalogItem.click();
     }
+
+    public String getFooterText(){
+
+        WebElement footerText = driver.findElement(By.className(footerClassName));
+        String actualFooterText = footerText.getText();
+        return actualFooterText;
+    }
 }
