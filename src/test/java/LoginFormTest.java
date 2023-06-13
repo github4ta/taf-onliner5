@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,7 +20,7 @@ class LoginFormTest extends BaseTest {
     }
 
     @Test
-    public void testIsCorrectNameButtonSignIn(){
+    public void testIsCorrectNameButtonSignIn() {
         WebDriver driver = new ChromeDriver();
         HomePage homePage = new HomePage(driver);
         LoginFormPage page = new LoginFormPage(driver);
@@ -29,4 +30,16 @@ class LoginFormTest extends BaseTest {
         Assertions.assertEquals("Войти", page.getTextOfBtnLogin());
     }
 
+    @Test
+    public void testPasswordPlaceholder() {
+        ChromeDriver driver = new ChromeDriver();
+        driver.get("https://www.onliner.by/");
+        driver.manage().window().maximize();
+        LoginFormPage loginFormPage = new LoginFormPage(driver);
+        HomePage homePage = new HomePage(driver);
+
+        homePage.clickButtonLogin();
+        String actualResult = loginFormPage.getPasswordText();
+        Assertions.assertEquals("Пароль", actualResult);
+    }
 }
