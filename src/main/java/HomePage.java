@@ -12,7 +12,6 @@ public class HomePage {
     String mainNavFleaItemByXpath = "//span[@class='b-main-navigation__text'][text()='Барахолка']";
     String buttonCatalogItemXpath = "//span[@class='b-main-navigation__text' and text() = 'Каталог']";
     String buttonHousesAndApartmentsXPath = "//*[@id='container']/div/div[2]/header/div[1]/div/nav/ul[1]/li[4]/a/span";
-    String url = "https://www.onliner.by/";
     WebDriver driver;
 
     public HomePage(WebDriver driver) {
