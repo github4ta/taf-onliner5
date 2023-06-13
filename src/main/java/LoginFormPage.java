@@ -43,4 +43,9 @@ public class LoginFormPage {
         WebElement getText = driver.findElement(By.className(buttonLoginByClassName));
         return getText.getText();
     }
+
+    public String getPasswordText(){
+        WebElement resultField = driver.findElement(By.xpath(inputPasswordFieldXpath));
+        return resultField.getText();
+    }
 }
