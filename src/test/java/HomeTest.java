@@ -8,6 +8,9 @@ class HomeTest extends BaseTest {
     ChromeDriver driver;
     HomePage homePage;
 
+public class HomeTest {
+
+}
     @BeforeEach
     public void warmUp() {
         driver = new ChromeDriver();
