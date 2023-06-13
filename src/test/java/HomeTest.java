@@ -1,0 +1,2 @@
+class HomeTest extends Test {
+}
