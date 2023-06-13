@@ -17,10 +17,16 @@ public class LoginFormPage {
     public LoginFormPage(WebDriver driver) {
         this.driver = driver;
     }
+  
     public void clickButtonLogin() {
         driver.findElement(By.className(buttonLoginByClassName)).click();
     }
 
+    public String getLabelTitleEnter() {
+        WebElement labelTitleEnter = driver.findElement(By.className(labelTitleEnterByClassName));
+        return labelTitleEnter.getText();
+    }
+  
     public LoginFormPage inputNickName() {
         WebElement inputName = driver.findElement(By.xpath(inputNickNameByXPath));
         inputName.click();
