@@ -35,11 +35,6 @@ public class HomePage {
         buttonEnter.click();
     }
 
-    public HomePage clickMenuItemHouses(){
-        WebElement buttonHouses = driver.findElement(By.xpath(buttonHousesAndApartmentsItemXpath));
-        buttonHouses.click();
-        return this;
-    }
 
     public void clickButtonLogin() {
         WebElement buttonLogin = driver.findElement(By.xpath(buttonLoginByXpath));
@@ -76,5 +71,10 @@ public class HomePage {
 
     public void goTo() {
         driver.get(url);
+    }
+    public HomePage clickMenuItemHouses(){
+        WebElement buttonHouses = driver.findElement(By.xpath(buttonHousesAndApartmentsItemXpath));
+        buttonHouses.click();
+        return this;
     }
 }
