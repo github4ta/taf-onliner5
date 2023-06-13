@@ -6,7 +6,7 @@ public class LoginFormPage {
 
     WebDriver driver;
 
-    String labelTitleEnterByXPath = "//*[@id='auth-container']/div/div[2]/div/div[1]";
+    String labelTitleEnterByClassName = "auth-form__title auth-form__title_big auth-form__title_condensed-default";
     String inputPasswordFieldXpath = "//input[@type='password']";
     String buttonLoginByClassName = "auth-button auth-button_primary auth-button_middle auth-form__button auth-form__button_width_full";
     String inputNickNameByXPath = "//input[@placeholder='Ник или e-mail']";
@@ -23,7 +23,7 @@ public class LoginFormPage {
     }
 
     public String getLabelTitleEnter() {
-        WebElement labelTitleEnter = driver.findElement(By.xpath(labelTitleEnterByXPath));
+        WebElement labelTitleEnter = driver.findElement(By.className(labelTitleEnterByClassName));
         return labelTitleEnter.getText();
     }
 
@@ -39,13 +39,18 @@ public class LoginFormPage {
         return this;
     }
 
-    public String getTextOfBtnLogin() {
-        WebElement getText = driver.findElement(By.className(buttonLoginByClassName));
-        return getText.getText();
+    public String getEmailPlaceholder() {
+        WebElement emailPlaceholder = driver.findElement(By.xpath(inputNickNameByXPath));
+        return emailPlaceholder.getText();
     }
 
     public String getPasswordText(){
         WebElement resultField = driver.findElement(By.xpath(inputPasswordFieldXpath));
         return resultField.getText();
+    }
+
+    public String getTextOfBtnLogin() {
+        WebElement getText = driver.findElement(By.className(buttonLoginByClassName));
+        return getText.getText();
     }
 }
