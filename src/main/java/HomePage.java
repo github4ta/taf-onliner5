@@ -23,4 +23,9 @@ public class HomePage {
         WebElement buttonEnter = driver.findElement(By.className(buttonEnterByClassName));
         buttonEnter.click();
     }
+    public HomePage clickMenuItemHouses(){
+        WebElement buttonHouses = driver.findElement(By.xpath(buttonHousesAndApartmentsItemXpath));
+        buttonHouses.click();
+        return this;
+    }
 }
