@@ -6,7 +6,7 @@ public class LoginFormPage {
 
     WebDriver driver;
 
-    String labelTitleEnterByClassName = "auth-form__title auth-form__title_big auth-form__title_condensed-default";
+    String labelTitleEnterByXPath = "//*[@id='auth-container']/div/div[2]/div/div[1]";
     String inputPasswordFieldXpath = "//input[@type='password']";
     String buttonLoginByClassName = "auth-button auth-button_primary auth-button_middle auth-form__button auth-form__button_width_full";
     String inputNickNameByXPath = "//input[@placeholder='Ник или e-mail']";
@@ -23,7 +23,7 @@ public class LoginFormPage {
     }
 
     public String getLabelTitleEnter() {
-        WebElement labelTitleEnter = driver.findElement(By.className(labelTitleEnterByClassName));
+        WebElement labelTitleEnter = driver.findElement(By.xpath(labelTitleEnterByXPath));
         return labelTitleEnter.getText();
     }
 

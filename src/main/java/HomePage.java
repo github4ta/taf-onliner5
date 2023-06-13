@@ -4,7 +4,9 @@ import org.openqa.selenium.WebElement;
 
 public class HomePage {
     String footerClassName = "footer-style__copy";
-    String buttonEnterByClassName = "auth-bar__item auth-bar__item--text";
+
+    // auth-bar__item auth-bar__item--text
+    String buttonEnterByXPath = "//*[@id='userbar']/div[1]/div/div/div[1]";
     String buttonNewsByXpath = "//span[@class='b-main-navigation__text' and text() = 'Новости']";
     String servicesItemByXpath = "//span[@class='b-main-navigation__text' and text() = 'Услуги']";
     String mainNavAvtobaraholkaItemXpath = "//span[@class='b-main-navigation__text'and text()='Автобарахолка']";
@@ -26,7 +28,7 @@ public class HomePage {
     }
 
     public void clickButtonEnter() {
-        WebElement buttonEnter = driver.findElement(By.className(buttonEnterByClassName));
+        WebElement buttonEnter = driver.findElement(By.xpath(buttonEnterByXPath));
         buttonEnter.click();
     }
 
