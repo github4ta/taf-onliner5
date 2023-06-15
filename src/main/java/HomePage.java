@@ -13,8 +13,6 @@ public class HomePage {
     private String mainMenuForumItemLocator = "//span[@class='b-main-navigation__text'and text()='Форум']";
     private String loginButtonLocator = "auth-bar__item auth-bar__item--text";
 
-
-
     public String getFooterText(){
         WebElement getText = driver.findElement(By.xpath(footerTextLocator));
         String footerText = getText.getText();
