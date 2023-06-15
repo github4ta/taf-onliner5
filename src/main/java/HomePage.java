@@ -10,7 +10,9 @@ public class HomePage {
     private String mainMenuNewsItemLocator = "//span[@class='b-main-navigation__text' and text()='Новости']";
     private String mainMenuHousesAndApartmentsItemLocator = "//span[@ class='b-main-navigation__text' and text() = 'Дома и квартиры']";
     private String mainMenuAutoItemLocator = "//*[@id='container']/div/div/header/div[2]/div/nav/ul[1]/li[3]/a/span";
+    private String mainMenuForumItemLocator = "//span[@class='b-main-navigation__text'and text()='Форум']";
     private String loginButtonLocator = "auth-bar__item auth-bar__item--text";
+
 
 
     public String getFooterText(){
