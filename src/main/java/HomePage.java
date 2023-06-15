@@ -1,0 +1,15 @@
+public class HomePage {
+
+    private ChromeDriver driver;
+    private String getTextLocatorXpath="/html/body/div[1]/footer/div/div/div/div[2]/div[2] ";
+
+    public HomePage(ChromeDriver driver) {
+        this.driver = driver;
+    }
+
+    public getText(){
+        WebElement getText = driver.findElement(By.xpath(getTextLocatorXpath));
+        String getTextMessage = getText.getText();
+        retutn getTextMessage;
+    }
+}
