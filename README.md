@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-taf-onliner5
-=======
 # taf-onliner5
 
 
@@ -10,13 +7,9 @@ taf-onliner5
 - Shikin Nikita
 - Gasich Olga
 - Tatjana Balashevich
-- Lenkevich Alexey!!!
+- Lenkevich Alexey
 - Shirochina Anastasiya
 - Filenkov Vladislav
 - Shidlovskaya Katerina
 - Sokolova Polina
 - Melnichenko Leonid
-
-МИР ТРУД МАЙ
-Ура, лето
-Hello group!
