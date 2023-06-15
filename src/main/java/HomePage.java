@@ -13,9 +13,13 @@ public class HomePage {
     private String loginButtonLocator = "auth-bar__item auth-bar__item--text";
 
 
+
     public String getFooterText(){
         WebElement getText = driver.findElement(By.xpath(footerTextLocator));
         String footerText = getText.getText();
         return footerText;
+    }
+    public LoginFormPage(WebDriver driver) {
+        this.driver = driver;
     }
 }
