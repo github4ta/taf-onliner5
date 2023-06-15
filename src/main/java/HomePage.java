@@ -5,7 +5,11 @@ import org.openqa.selenium.WebElement;
 public class HomePage {
 
     WebDriver driver;
-  
+
+    public HomePage(WebDriver driver) {
+        this.driver = driver;
+    }
+
     private String footerTextLocator ="/html/body/div[1]/footer/div/div/div/div[2]/div[2]";
     private String mainMenuNewsItemLocator = "//span[@class='b-main-navigation__text' and text()='Новости']";
     private String mainMenuHousesAndApartmentsItemLocator = "//span[@ class='b-main-navigation__text' and text() = 'Дома и квартиры']";
