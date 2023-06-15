@@ -5,6 +5,8 @@ public class HomePage {
     private String mainMenuNewsItemLocator = "//span[@class='b-main-navigation__text' and text()='Новости']";
     private String mainMenuHousesAndApartmentsByXpath = "//span[@ class='b-main-navigation__text' and text() = 'Дома и квартиры']";
 
+    private String MainMenuAutoItemLocator = "//*[@id='container']/div/div/header/div[2]/div/nav/ul[1]/li[3]/a/span";
+
     public HomePage(ChromeDriver driver) {
         this.driver = driver;
     }
