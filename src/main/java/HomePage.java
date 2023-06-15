@@ -2,6 +2,7 @@ public class HomePage {
 
     private ChromeDriver driver;
     private String getTextLocatorXpath="/html/body/div[1]/footer/div/div/div/div[2]/div[2] ";
+    private String mainMenuNewsItemLocator = "//span[@class='b-main-navigation__text' and text()='Новости']";
 
     public HomePage(ChromeDriver driver) {
         this.driver = driver;
