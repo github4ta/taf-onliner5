@@ -20,9 +20,13 @@ public class HomePage {
     String menuUslugiLocatorByXPath= "//span[@class='b-main-navigation__text' and contains(text(), 'Услуги')]";
 
 
+
     public String getFooterText(){
         WebElement getText = driver.findElement(By.xpath(footerTextLocator));
         String footerText = getText.getText();
         return footerText;
+    }
+    public LoginFormPage(WebDriver driver) {
+        this.driver = driver;
     }
 }
