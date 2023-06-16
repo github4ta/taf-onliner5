@@ -32,4 +32,7 @@ public class HomePage {
     public void clickMenuItemUslugi(){
         driver.findElement(By.xpath(mainMenuUslugiLocator)).click();
     }
+    public void clickItemCatalog(){
+        driver.findElement(By.xpath(mainMenuCatalogItemLocator)).click();
+    }
 }
