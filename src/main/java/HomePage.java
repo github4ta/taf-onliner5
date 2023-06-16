@@ -3,7 +3,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class HomePage {
-
     WebDriver driver;
 
     public HomePage(WebDriver driver) {
@@ -12,7 +11,7 @@ public class HomePage {
 
     private String footerTextLocator = "/html/body/div[1]/footer/div/div/div/div[2]/div[2]";
     private String mainMenuNewsItemLocator = "//span[@class='b-main-navigation__text' and text()='Новости']";
-    private String mainMenuHousesAndApartmentsItemLocator = "//span[@ class='b-main-navigation__text' and text() = 'Дома и квартиры']";
+    private String mainMenuHousesAndApartmentsItemLocator = "//span[@class='b-main-navigation__text' and text()='Дома и квартиры']";
     private String mainMenuCatalogItemLocator = "//span[@class='b-main-navigation__text' and text()='Каталог']";
     private String mainMenuAutoItemLocator = "//*[@id='container']/div/div/header/div[2]/div/nav/ul[1]/li[3]/a/span";
     private String mainMenuForumItemLocator = "//span[@class='b-main-navigation__text'and text()='Форум']";
@@ -22,8 +21,7 @@ public class HomePage {
 
     public String getFooterText() {
         WebElement getText = driver.findElement(By.xpath(footerTextLocator));
-        String footerText = getText.getText();
-        return footerText;
+        return getText.getText();
     }
     public void clickButtonLogin() {
         driver.findElement(By.className(loginButtonLocator)).click();
