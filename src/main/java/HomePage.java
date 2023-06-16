@@ -25,4 +25,8 @@ public class HomePage {
         String footerText = getText.getText();
         return footerText;
     }
+
+    public void clickMenuItemUslugi(){
+        driver.findElement(By.xpath(mainMenuUslugiLocator)).click();
+    }
 }
