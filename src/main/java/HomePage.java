@@ -25,7 +25,6 @@ public class HomePage {
         String footerText = getText.getText();
         return footerText;
     }
-
     public void clickButtonLogin() {
         driver.findElement(By.className(loginButtonLocator)).click();
     }
