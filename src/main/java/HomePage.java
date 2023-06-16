@@ -25,7 +25,12 @@ public class HomePage {
         String footerText = getText.getText();
         return footerText;
     }
-    public void clickButtonLogin(){
+
+    public void clickButtonLogin() {
         driver.findElement(By.className(loginButtonLocator)).click();
+    }
+
+    public void clickHousesAndApartmentsItem() {
+        driver.findElement(By.xpath(mainMenuHousesAndApartmentsItemLocator)).click();
     }
 }
