@@ -29,4 +29,7 @@ public class HomePage {
     public void clickHousesAndApartmentsItem() {
         driver.findElement(By.xpath(mainMenuHousesAndApartmentsItemLocator)).click();
     }
+    public void clickItemCatalog(){
+        driver.findElement(By.xpath(mainMenuCatalogItemLocator)).click();
+    }
 }
