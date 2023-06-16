@@ -2,6 +2,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
 public class HomePage {
     WebDriver driver;
 
@@ -33,3 +37,7 @@ public class HomePage {
         driver.findElement(By.xpath(mainMenuUslugiLocator)).click();
     }
 }
+
+    public void clickButtonForum(){
+        driver.findElement(By.xpath(mainMenuForumItemLocator)).click);
+    }
