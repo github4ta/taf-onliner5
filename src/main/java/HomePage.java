@@ -29,7 +29,7 @@ public class HomePage {
         driver.findElement(By.className(loginButtonLocator)).click();
     }
 
-    public HomePage clickMenuAutoItem() {
+    public HomePage clickMenuAutoBaraholkaItem() {
         driver.findElement(By.xpath(mainMenuAutoItemLocator)).click();
         return this;
     }
