@@ -28,4 +28,9 @@ public class HomePage {
     public void clickButtonLogin(){
         driver.findElement(By.className(loginButtonLocator)).click();
     }
+
+    public HomePage clickMenuNewsItem() {
+        driver.findElement(By.xpath(mainMenuNewsItemLocator)).click();
+        return this;
+    }
 }
