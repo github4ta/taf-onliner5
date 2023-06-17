@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LoginFormTest extends Test {
+public class LoginFormTest extends BaseTest {
     @Test
     public void testPasswordInputFieldPlaceholder() {
         WebDriver driver = new ChromeDriver();
@@ -15,5 +15,4 @@ public class LoginFormTest extends Test {
         homePage.clickButtonLogin();
         Assertions.assertEquals(loginFormPage.passwordInputFieldPlaceholderText, loginFormPage.getPasswordInputFieldPlaceholderText());
     }
-
 }
