@@ -32,7 +32,9 @@ public class HomePage {
     public void clickMenuItemUslugi(){
         driver.findElement(By.xpath(mainMenuUslugiLocator)).click();
     }
-
+    public void clickButtonForum(){
+        driver.findElement(By.xpath(mainMenuForumItemLocator)).click);
+    }
     public void clickMenuItemBaraholka(){driver.findElement(By.xpath(mainMenuBaraholkaItemLocator)).click();
     }
 }
