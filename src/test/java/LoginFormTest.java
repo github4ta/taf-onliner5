@@ -15,4 +15,16 @@ public class LoginFormTest extends BaseTest {
         homePage.clickButtonLogin();
         Assertions.assertEquals(loginFormPage.passwordInputFieldPlaceholderText, loginFormPage.getPasswordInputFieldPlaceholderText());
     }
+    @Test
+    public void testLoginInputFieldPlaceholder() {
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        HomePage homePage = new HomePage(driver);
+        LoginFormPage loginFormPage = new LoginFormPage(driver);
+        driver.get("https://www.onliner.by/");
+
+        homePage.clickButtonLogin();
+        Assertions.assertEquals(loginFormPage.loginInputFieldPlaceholderText, loginFormPage.getLoginInputFieldPlaceholderText());
+        driver.quit();
+    }
 }
