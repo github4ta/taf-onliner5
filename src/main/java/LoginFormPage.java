@@ -1,3 +1,7 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
 public class LoginFormPage {
   
     WebDriver webdriver;
@@ -7,19 +11,23 @@ public class LoginFormPage {
     String nicknameInputLocator = "//input[@placeholder='Ник или e-mail']";
     String enterButtonLocator = "//button[@type='submit' and @class='auth-button auth-button_primary auth-button_middle auth-form__button auth-form__button_width_full']";
     String errorMassageEmailLocator = "/div[contains(text(),'Укажите ник или e-mail')]";
-    String errorMassageEmailLocator = "//div[@class='auth-form__description auth-form__description_error auth-form__description_base auth-form__description_extended-other' and text()='Укажите ник или e-mail']";
+    String passwordInputFieldPlaceholderText = "Пароль";
 
     public LoginFormPage(WebDriver webdriver) {
         this.webdriver = webdriver;
     }
 
     public void clickButtonEnter(){
-        webDriver.findElement(By.xpath(enterButtonLocator)).click();
+        webdriver.findElement(By.xpath(enterButtonLocator)).click();
     }
   
     public String getTextTitleForm(){
-        String textTitleForm = (webdriver.findElement(By.xpath(titleFormLocator))).getText;
+        String textTitleForm = webdriver.findElement(By.xpath(titleFormLocator)).getText();
         return textTitleForm;
+    }
+    public String getPasswordInputFieldPlaceholderText(){
+        WebElement passwordInputField = webdriver.findElement(By.xpath(passwordInputLocator));
+        return passwordInputField.getAttribute("placeholder");
     }
 }
 
