@@ -29,5 +29,9 @@ public class LoginFormPage {
         WebElement passwordInputField = webdriver.findElement(By.xpath(passwordInputLocator));
         return passwordInputField.getAttribute("placeholder");
     }
+    public String getTextEnterButton(){
+        String textEnterButton = webdriver.findElement(By.xpath(enterButtonLocator)).getText();
+        return textEnterButton;
+    }
 }
 
