@@ -17,7 +17,7 @@ public class HomePage {
     private String mainMenuForumItemLocator = "//span[@class='b-main-navigation__text'and text()='Форум']";
     private String mainMenuBaraholkaItemLocator = "//span[@class='b-main-navigation__text' and contains(text(),'Барахолка')]";
     private String mainMenuUslugiLocator = "//span[@class='b-main-navigation__text' and contains(text(), 'Услуги')]";
-    private String loginButtonLocator = "auth-bar__item auth-bar__item--text";
+    private String loginButtonLocator = "auth-bar__item--text";
 
     public String getFooterText() {
         WebElement getText = driver.findElement(By.xpath(footerTextLocator));
