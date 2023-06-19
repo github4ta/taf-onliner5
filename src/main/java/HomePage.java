@@ -23,7 +23,6 @@ public class HomePage {
     public void goTo() {
         driver.get(url);
     }
-
     public String getFooterText() {
         WebElement getText = driver.findElement(By.xpath(footerTextLocator));
         return getText.getText();
