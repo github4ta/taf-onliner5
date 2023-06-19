@@ -18,26 +18,31 @@ public class HomePage {
     private String mainMenuBaraholkaItemLocator = "//span[@class='b-main-navigation__text' and contains(text(),'Барахолка')]";
     private String mainMenuUslugiLocator = "//span[@class='b-main-navigation__text' and contains(text(), 'Услуги')]";
     private String loginButtonLocator = "auth-bar__item auth-bar__item--text";
+    private String baseUrl = "https://www.onliner.by";
 
     public String getFooterText() {
         WebElement getText = driver.findElement(By.xpath(footerTextLocator));
         return getText.getText();
     }
+
     public void clickButtonLogin() {
         driver.findElement(By.className(loginButtonLocator)).click();
     }
+
     public void clickHousesAndApartmentsItem() {
         driver.findElement(By.xpath(mainMenuHousesAndApartmentsItemLocator)).click();
     }
-    public void clickMenuItemUslugi(){
+
+    public void clickMenuItemUslugi() {
         driver.findElement(By.xpath(mainMenuUslugiLocator)).click();
     }
     public void clickItemCatalog(){
         driver.findElement(By.xpath(mainMenuCatalogItemLocator)).click();
     }
     public void clickButtonForum(){
-        driver.findElement(By.xpath(mainMenuForumItemLocator)).click);
+        driver.findElement(By.xpath(mainMenuForumItemLocator)).click();
     }
-    public void clickMenuItemBaraholka(){driver.findElement(By.xpath(mainMenuBaraholkaItemLocator)).click();
+    public void clickMenuItemBaraholka() {
+        driver.findElement(By.xpath(mainMenuBaraholkaItemLocator)).click();
     }
 }
