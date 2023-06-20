@@ -18,8 +18,11 @@ public class HomePage {
     private String mainMenuBaraholkaItemLocator = "//span[@class='b-main-navigation__text' and contains(text(),'Барахолка')]";
     private String mainMenuUslugiLocator = "//span[@class='b-main-navigation__text' and contains(text(), 'Услуги')]";
     private String loginButtonLocator = "auth-bar__item auth-bar__item--text";
-    private String baseUrl = "https://www.onliner.by";
+    private String url = "https://www.onliner.by";
 
+    public void goTo() {
+        driver.get(url);
+    }
     public String getFooterText() {
         WebElement getText = driver.findElement(By.xpath(footerTextLocator));
         return getText.getText();
