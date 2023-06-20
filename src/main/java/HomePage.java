@@ -48,4 +48,9 @@ public class HomePage {
     public void clickMenuItemBaraholka() {
         driver.findElement(By.xpath(mainMenuBaraholkaItemLocator)).click();
     }
+
+    public HomePage clickMenuNewsItem() {
+        driver.findElement(By.xpath(mainMenuNewsItemLocator)).click();
+        return this;
+    }
 }
