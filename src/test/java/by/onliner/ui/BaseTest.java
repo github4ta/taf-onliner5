@@ -1,9 +1,11 @@
+package by.onliner.ui;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class PageTest {
+public abstract class BaseTest {
     WebDriver driver;
     @BeforeEach
     public void beforeTest(){

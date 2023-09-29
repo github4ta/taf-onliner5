@@ -1,9 +1,13 @@
+package by.onliner.ui;
+
+import by.onliner.pages.HomePage;
+import by.onliner.pages.LoginFormPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LoginFormTest extends PageTest{
+public class LoginFormTest extends BaseTest {
     @Test
     public void testPasswordInputFieldPlaceholder() {
         WebDriver driver = new ChromeDriver();
